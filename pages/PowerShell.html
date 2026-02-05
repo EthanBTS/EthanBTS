@@ -65,21 +65,13 @@
                 <div class="col-md-6 mb-4">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
-                            <span><i class="fa fa-code"></i> create_users.ps1</span>
-                            <span class="badge badge-info">Active Directory</span>
+                            <span><i class="fa fa-code"></i> P-immobilier-Java.ps1</span>
+                            <span class="badge badge-info">Prod</span>
                         </div>
                         <div class="card-body bg-light">
-                            <h5 class="card-title">Automatisation de création d'utilisateurs</h5>
-                            <p class="card-text text-secondary">Ce script permet d'importer une liste d'utilisateurs depuis un fichier CSV et de créer les comptes dans l'AD avec des mots de passe temporaires.</p>
+                            <h5 class="card-title">Enregistrement immobilier filre</h5>
+                            <p class="card-text text-secondary">Ce script permet d'importer une liste de bien immobilier mis en vente dans le departement du var et de le recuperer en CSV selon les filtre donnée ( ville, prix, superficie.)</p>
 
-                            <pre class="p-3 bg-dark text-success rounded"><code># Exemple de code
-                                    $users = Import-Csv "C:\scripts\users.csv"
-                                    foreach ($user in $users) {
-                                    New-ADUser -Name $user.name -Email $user.mail
-                                }</code></pre>
-                        </div>
-                        <div class="card-footer bg-white border-top-0">
-                            <a href="#" class="btn btn-outline-primary btn-sm">Voir le projet complet</a>
                         </div>
                     </div>
                 </div>
@@ -94,12 +86,8 @@
                             <h5 class="card-title">Sauvegarde de base de données</h5>
                             <p class="card-text text-secondary">Script de maintenance pour effectuer des sauvegardes hebdomadaires des bases de données SQL Server avec compression ZIP.</p>
 
-                            <pre class="p-3 bg-dark text-success rounded"><code># Compression des logs
-                                Compress-Archive -Path "C:\Logs\*" -DestinationPath "D:\Backup\logs.zip"</code></pre>
                         </div>
-                        <div class="card-footer bg-white border-top-0">
-                            <a href="#" class="btn btn-outline-primary btn-sm">Voir le projet complet</a>
-                        </div>
+
                     </div>
                 </div>
             </div>
